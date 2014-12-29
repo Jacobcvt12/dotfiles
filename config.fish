@@ -5,7 +5,7 @@ set fish_path ~/dotfiles/.oh-my-fish
 set fish_theme robbyrussell
 
 # Plugins
-set fish_plugins vundle
+set fish_plugins vundle 
 
 # Load oh-my-fish configuration.
 . $fish_path/oh-my-fish.fish
