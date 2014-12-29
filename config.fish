@@ -1,5 +1,5 @@
 # Path to your oh-my-fish.
-set fish_path $HOME/.oh-my-fish
+set fish_path ~/dotfiles/.oh-my-fish
 
 # Theme
 set fish_theme robbyrussell
