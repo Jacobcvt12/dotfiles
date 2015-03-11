@@ -10,6 +10,7 @@
 " 4. Vundle Settings
 " 5. Vim-R Settings          
 " 6. Vim-airline Settings
+" 7. Syntastic Settings
 " -----------------------------------------------------------
 
 " ------------------------------
@@ -121,6 +122,9 @@ nnoremap <C-n>  :tabnew<CR>:e .<CR>
 nnoremap <C-j>  :tabnext<CR>
 nnoremap <C-k>  :tabprev<CR>
 
+" press control c to copy to mac clipboard
+vmap <C-c> :w !pbcopy<CR><CR> 
+
 " change ctrl v to ctrl q so as not to conflict with tmux binding
 " THIS DISABLES MACRO RECORDING
 :nnoremap q <c-v>
@@ -154,12 +158,12 @@ Plugin 'vim-scripts/sql_iabbr.vim'
 Plugin 'ivanov/vim-ipython'
 Plugin 'bling/vim-airline'
 Plugin 'klen/python-mode'
+Plugin 'tpope/vim-fugitive'
+Plugin 'kien/ctrlp.vim'
 
 " YouCompleteMe " support for clang
 
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
-let g:syntastic_cpp_compiler = 'clang++'
-let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
 let g:ycm_path_to_python_interpreter = '/usr/local/bin/python'
 
 " ---------------------
@@ -192,10 +196,10 @@ nmap <Space> <Plug>RDSendLine
 "                  
 " ------------------------
 
-let g:airline_theme             = 'bubblegum'
-let g:airline_enable_branch     = 1
-let g:airline_enable_syntastic  = 1
-let g:airline_powerline_fonts   = 1
+let g:airline_theme                         = 'bubblegum'
+let g:airline#extensions#syntastic#enabled  = 1
+let g:airline_powerline_fonts               = 1
+let g:airline#extensions#branch#enabled     = 1
 set laststatus=2
 
 let g:airline_left_sep = '»'
@@ -203,3 +207,16 @@ let g:airline_left_sep = '▶'
 let g:airline_right_sep = '«'
 let g:airline_right_sep = '◀'
 set t_Co=256
+
+" ------------------------------
+"                  
+" 7. Syntastic Settings
+"                  
+" ------------------------------
+
+" include directories for Rcpp compilation
+let g:syntastic_cpp_compiler = 'g++-4.9'
+let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
+let g:syntastic_c_check_header = 1
+let b:syntastic_c_cflags = '-I/usr/local/Cellar/r/3.1.2_1/R.framework/Resources/include -I/usr/local/Cellar/r/3.1.2_1/R.framework/Versions/3.1/Resources/library/Rcpp/include'
+ 
