@@ -41,6 +41,11 @@ set ruler		                " show the cursor position all the time
 set showcmd		                " display incomplete commands
 set incsearch		            " do incremental searching
 
+" convert docx files to markdown on read and vice versa
+" http://vi.stackexchange.com/questions/554/is-it-possible-to-easily-work-with-odt-doc-docx-rtf-and-other-non-plain
+autocmd BufReadPost *.docx :%!pandoc -f docx -t markdown
+autocmd BufWritePost *.docx :!pandoc -f markdown -t docx % > tmp.docx
+
 
 " -----------------------------------
 "                  
