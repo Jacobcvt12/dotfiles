@@ -151,7 +151,6 @@ Plugin 'gmarik/vundle'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'jcfaria/Vim-R-plugin'
 Plugin 'scrooloose/syntastic'
 Plugin 'vim-scripts/SearchComplete'
 Plugin 'vim-scripts/sql_iabbr.vim'
@@ -160,11 +159,16 @@ Plugin 'bling/vim-airline'
 Plugin 'klen/python-mode'
 Plugin 'tpope/vim-fugitive'
 Plugin 'kien/ctrlp.vim'
+Plugin 'vim-scripts/Vim-R-Plugin'
+Plugin 'xuhdev/vim-latex-live-preview'
 
 " YouCompleteMe " support for clang
 
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
 let g:ycm_path_to_python_interpreter = '/usr/local/bin/python'
+
+" latex live preview
+let g:livepreview_previewer = 'open -a Preview'
 
 " ---------------------
 "                  
