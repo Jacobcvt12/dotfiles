@@ -135,7 +135,7 @@ vmap <C-c> :w !pbcopy<CR><CR>
 
 " change ctrl v to ctrl q so as not to conflict with tmux binding
 " THIS DISABLES MACRO RECORDING
-:nnoremap q <c-v>
+nnoremap q <C-v>
 
 " Don't use Ex mode, use Q for formatting
 map Q gq
@@ -169,6 +169,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'kien/ctrlp.vim'
 Plugin 'vim-scripts/Vim-R-Plugin'
 Plugin 'xuhdev/vim-latex-live-preview'
+Plugin 'jpalardy/vim-slime'
 
 " YouCompleteMe " support for clang
 
@@ -177,6 +178,10 @@ let g:ycm_path_to_python_interpreter = '/usr/local/bin/python'
 
 " latex live preview
 let g:livepreview_previewer = 'open -a Preview'
+
+" Change slime to use tmux
+let g:slime_target = "tmux"
+let g:slime_python_ipython = 1
 
 " ---------------------
 "                  
@@ -227,7 +232,7 @@ set t_Co=256
 " ------------------------------
 
 " include directories for Rcpp compilation
-let g:syntastic_cpp_compiler = 'g++-4.9'
+let g:syntastic_cpp_compiler = 'g++-5'
 let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
 let g:syntastic_c_check_header = 1
 let b:syntastic_c_cflags = '-I/usr/local/Cellar/r/3.1.2_1/R.framework/Resources/include -I/usr/local/Cellar/r/3.1.2_1/R.framework/Versions/3.1/Resources/library/Rcpp/include'
