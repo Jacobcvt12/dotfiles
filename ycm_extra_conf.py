@@ -1,5 +1,6 @@
 def FlagsForFile(filename, **kwargs):
 
+    # main flags
     flags = [
         '-Wall',
         '-Wextra',
@@ -18,6 +19,16 @@ def FlagsForFile(filename, **kwargs):
         '-isystem',
         '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/c++/v1',
     ]
+
+    # Rcpp flags
+    rcpp_flags = [
+        '-I',
+        '~/.Rlibs/Rcpp/include',
+        '-I',
+        '~/.Rlibs/RcppArmadillo/include',
+    ]
+
+    flags += rcpp_flags
 
     data = kwargs['client_data']
     filetype = data['&filetype']
