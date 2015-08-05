@@ -2,47 +2,20 @@ import os
 import ycm_core
 
 flags = [
+    # main flags
     '-Wall',
-    '-Wextra',
-    '-Werror',
-    '-Wc++98-compat',
-    '-Wno-long-long',
-    '-Wno-variadic-macros',
-    '-fexceptions',
-    '-DNDEBUG',
     '-std=c++11',
+    '-stdlib=libc++',
     '-x',
     'c++',
-    '-isystem',
-    '../BoostParts',
-    '-isystem',
-    '/usr/local/Frameworks/Python.framework/Headers/',
-    '-isystem',
-    '../llvm/include',
-    '-isystem',
-    '../llvm/tools/clang/include',
     '-I',
     '.',
-    '-I',
-    './ClangCompleter',
-    '-isystem',
-    './tests/gmock/gtest',
-    '-isystem',
-    './tests/gmock/gtest/include',
-    '-isystem',
-    './tests/gmock',
-    '-isystem',
-    './tests/gmock/include',
-]
-
-rcpp_flags = [
+    # Rcpp flags
     '-I',
     '~/.Rlibs/Rcpp/include',
     '-I',
     '~/.Rlibs/RcppArmadillo/include',
 ]
-
-flags += rcpp_flags
 
 # Set this to the absolute path to the folder (NOT the file!) containing the
 # compile_commands.json file to use that instead of 'flags'. See here for
