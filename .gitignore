@@ -1,3 +1,4 @@
 .oh-my-fish
 *.pyc
 *.swp
+.ropeproject/*
