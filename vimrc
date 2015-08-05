@@ -236,5 +236,5 @@ set t_Co=256
 let g:syntastic_cpp_compiler = 'g++-5'
 let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
 let g:syntastic_c_check_header = 1
-let b:syntastic_c_cflags = '-I/usr/local/Cellar/r/3.1.2_1/R.framework/Resources/include -I/usr/local/Cellar/r/3.1.2_1/R.framework/Versions/3.1/Resources/library/Rcpp/include'
+let b:syntastic_c_cflags = '-I/usr/local/Frameworks/R.framework/Resources/include -I~/.Rlibs/Rcpp/include'
  
