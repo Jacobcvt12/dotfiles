@@ -11,10 +11,8 @@ flags = [
     '-I',
     '.',
     # Rcpp flags
-    '-I',
-    '~/.Rlibs/Rcpp/include',
-    '-I',
-    '~/.Rlibs/RcppArmadillo/include',
+    '-I/Users/jacobcvt12/.Rlibs/Rcpp/include',
+    '-I/Users/jacobcvt12/.Rlibs/RcppArmadillo/include',
 ]
 
 # Set this to the absolute path to the folder (NOT the file!) containing the
