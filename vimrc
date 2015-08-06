@@ -68,12 +68,11 @@ else
   set backup		" keep a backup file
 endif
 
-" Switch syntax highlighting on, when the terminal has colors
-" Also switch on highlighting the last used search pattern.
-if &t_Co > 2 || has("gui_running")
-  syntax on
-  set hlsearch
-endif
+" Switch syntax highlighting on
+syntax on
+
+" Highlight search matches
+set hlsearch
 
 " Enable file type detection.
 " Use the default filetype settings, so that mail gets 'tw' set to 72,
