@@ -11,6 +11,7 @@
 " 5. Vim-R Settings          
 " 6. Vim-airline Settings
 " 7. Syntastic Settings
+" 8. Git Settings
 " -----------------------------------------------------------
 
 " ------------------------------
@@ -224,3 +225,10 @@ let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
 let g:syntastic_c_check_header = 1
 let b:syntastic_c_cflags = '-I/usr/local/Frameworks/R.framework/Resources/include -I~/.Rlibs/Rcpp/include'
  
+" ------------------------------
+"                  
+" 8. Git Settings
+"                  
+" ------------------------------
+
+nnoremap <leader>gs :Gstatus<CR>
