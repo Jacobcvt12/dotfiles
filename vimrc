@@ -169,7 +169,6 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'vim-scripts/Vim-R-Plugin'
 Plugin 'xuhdev/vim-latex-live-preview'
 Plugin 'jpalardy/vim-slime'
-Plugin 'jceb/vim-orgmode'
 
 " YouCompleteMe " support for clang
 
