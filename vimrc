@@ -167,16 +167,12 @@ Plugin 'klen/python-mode'
 Plugin 'tpope/vim-fugitive'
 Plugin 'kien/ctrlp.vim'
 Plugin 'vim-scripts/Vim-R-Plugin'
-Plugin 'xuhdev/vim-latex-live-preview'
 Plugin 'jpalardy/vim-slime'
 
 " YouCompleteMe " support for clang
 
 let g:ycm_global_ycm_extra_conf = '~/dotfiles/ycm_extra_conf.py'
 let g:ycm_path_to_python_interpreter = '/usr/local/bin/python'
-
-" latex live preview
-let g:livepreview_previewer = 'open -a Preview'
 
 " Change slime to use tmux
 let g:slime_target = "tmux"
