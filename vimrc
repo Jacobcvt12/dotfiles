@@ -167,10 +167,6 @@ Plugin 'rking/ag.vim'
 let g:ycm_global_ycm_extra_conf = '~/dotfiles/ycm_extra_conf.py'
 let g:ycm_path_to_python_interpreter = '/usr/local/bin/python'
 
-" Change slime to use tmux
-let g:slime_target = "tmux"
-let g:slime_python_ipython = 1
-
 " ---------------------
 "                  
 "  5. Vim-R Settings  
