@@ -36,11 +36,12 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
-set backupdir=~/.vim/backup//   " set backup directory
-set history=50		            " keep 50 lines of command line history
-set ruler		                " show the cursor position all the time
-set showcmd		                " display incomplete commands
-set incsearch		            " do incremental searching
+set backupdir=~/.vim/backup//      " set backup directory
+set directory=~/.vim/swap_files//  " save .swp files here instead
+set history=50		               " keep 50 lines of command line history
+set ruler		                   " show the cursor position all the time
+set showcmd		                   " display incomplete commands
+set incsearch		               " do incremental searching
 
 " specify which files are unzipped
 let g:zipPlugin_ext = '*.zip,*.jar'
