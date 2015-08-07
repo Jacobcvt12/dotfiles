@@ -161,7 +161,6 @@ Plugin 'klen/python-mode'
 Plugin 'tpope/vim-fugitive'
 Plugin 'kien/ctrlp.vim'
 Plugin 'vim-scripts/Vim-R-Plugin'
-Plugin 'jpalardy/vim-slime'
 Plugin 'rking/ag.vim'
 
 " YouCompleteMe " support for clang
