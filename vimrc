@@ -161,7 +161,6 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'kien/ctrlp.vim'
 Plugin 'vim-scripts/Vim-R-Plugin'
 Plugin 'rking/ag.vim'
-Plugin 'szw/vim-tags'
 
 " YouCompleteMe " support for clang
 
