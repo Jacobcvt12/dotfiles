@@ -162,6 +162,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'vim-scripts/Vim-R-Plugin'
 Plugin 'rking/ag.vim'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'maksimr/vim-jsbeautify'
 
 " YouCompleteMe " support for clang
 
