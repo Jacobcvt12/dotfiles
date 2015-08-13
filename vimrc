@@ -12,6 +12,7 @@
 " 6. Vim-airline Settings
 " 7. Syntastic Settings
 " 8. Git Settings
+" 9. Silver Searcher Settings
 " -----------------------------------------------------------
 
 " ------------------------------
@@ -231,3 +232,12 @@ let b:syntastic_c_cflags = '-I/usr/local/Frameworks/R.framework/Resources/includ
 " ------------------------------
 
 nnoremap <leader>gs :Gstatus<CR>
+
+" ------------------------------
+"                  
+" 9. Silver Searcher Settings
+"                  
+" ------------------------------
+
+nnoremap <leader>a :Ag!<Space>
+let g:ag_working_path_mode="r"
