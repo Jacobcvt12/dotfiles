@@ -43,6 +43,10 @@ set history=50		               " keep 50 lines of command line history
 set ruler		                   " show the cursor position all the time
 set showcmd		                   " display incomplete commands
 set incsearch		               " do incremental searching
+set cursorline                     " highlight current line
+set foldenable                     " enable folding
+set foldmethod=indent              " fold based on indent level
+set foldlevelstart=10              " open most folds by default
 
 " specify which files are unzipped
 let g:zipPlugin_ext = '*.zip,*.jar'
