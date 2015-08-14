@@ -47,6 +47,7 @@ set cursorline                     " highlight current line
 set foldenable                     " enable folding
 set foldmethod=indent              " fold based on indent level
 set foldlevelstart=10              " open most folds by default
+set modelines=1                    " check for vim settings on last line
 
 " specify which files are unzipped
 let g:zipPlugin_ext = '*.zip,*.jar'
@@ -245,3 +246,5 @@ nnoremap <leader>gs :Gstatus<CR>
 
 nnoremap <leader>a :Ag!<Space>
 let g:ag_working_path_mode="r"
+
+" vim:foldmethod=marker:foldlevel=0
