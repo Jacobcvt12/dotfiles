@@ -113,6 +113,9 @@ nnoremap <C-k>  :tabprev<CR>
 " press control c to copy to mac clipboard
 vmap <C-c> :w !pbcopy<CR><CR> 
 
+" use comma as leader
+let mapleader = ","
+
 " change ctrl v to ctrl q so as not to conflict with tmux binding
 " THIS DISABLES MACRO RECORDING
 nnoremap q <C-v>
