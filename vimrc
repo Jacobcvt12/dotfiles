@@ -3,23 +3,9 @@
 " Description: .vimrc file (vim configurations)                    
 " Maintainer:	Jacob Carey <jacobcvt12@gmail.com>          
 "
-" Sections:
-" 1. General Settings (Set)
-" 2. General Settings (Conditional)
-" 3. General Keyboard Mappings
-" 4. Vundle Settings
-" 5. Vim-R Settings          
-" 6. Vim-airline Settings
-" 7. Syntastic Settings
-" 8. Git Settings
-" 9. Silver Searcher Settings
 " -----------------------------------------------------------
 
-" ------------------------------
-"                  
-" 1. General Settings (Set)
-"                  
-" ------------------------------
+" 1. General Settings {{{
 
 " Use Vim settings, rather than Vi settings 
 " This must be first, because it changes other options as a side effect.
@@ -57,12 +43,8 @@ let g:zipPlugin_ext = '*.zip,*.jar'
 autocmd BufReadPost *.docx :%!pandoc -f docx -t markdown
 autocmd BufWritePost *.docx :!pandoc -f markdown -t docx % > tmp.docx
 
-
-" -----------------------------------
-"                  
-" 2. General Settings (Conditional)
-"                  
-" -----------------------------------
+" }}}
+" 2. General Settings (Conditional) {{{
 
 " Vim requires a POSIX-compliant shell. Set shell to be bash
 " if SHELL environment variable contains /fish
@@ -114,12 +96,8 @@ if !exists(":DiffOrig")
 		  \ | wincmd p | diffthis
 endif
 
-
-" ------------------------------
-"                  
-" 3. General Keyboard Mappings
-"                  
-" ------------------------------
+" }}}
+" 3. General Keyboard Mappings {{{
 
 " remap escape key
 " to simultaneous jk
@@ -141,11 +119,8 @@ nnoremap q <C-v>
 " Don't use Ex mode, use Q for formatting
 map Q gq
 
-" ---------------------
-"                  
-" 4. Vundle & Plugins 
-"                  
-" ---------------------
+" }}}
+" 4. Vundle & Plugins {{{
 
 " system setup
 
@@ -175,11 +150,8 @@ Plugin 'maksimr/vim-jsbeautify'
 let g:ycm_global_ycm_extra_conf = '~/dotfiles/ycm_extra_conf.py'
 let g:ycm_path_to_python_interpreter = '/usr/local/bin/python'
 
-" ---------------------
-"                  
-"  5. Vim-R Settings  
-"                  
-" ---------------------
+" }}}
+" 5. Vim-R Settings {{{
 
 " Open R session in Terminal
 
@@ -199,11 +171,8 @@ vmap <Space> <Plug>RDSendSelection
 " send line to R with space bar
 nmap <Space> <Plug>RDSendLine
 
-" ------------------------
-"                  
-"  6. Vim-airline Settings  
-"                  
-" ------------------------
+" }}}
+" 6. Vim-airline Settings {{{
 
 let g:airline_theme                         = 'bubblegum'
 let g:airline#extensions#syntastic#enabled  = 1
@@ -218,33 +187,26 @@ let g:airline_right_sep = '«'
 let g:airline_right_sep = '◀'
 set t_Co=256
 
-" ------------------------------
-"                  
-" 7. Syntastic Settings
-"                  
-" ------------------------------
+" }}}
+" 7. Syntastic Settings {{{
 
 " include directories for Rcpp compilation
 let g:syntastic_cpp_compiler = 'g++-5'
 let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
 let g:syntastic_c_check_header = 1
 let b:syntastic_c_cflags = '-I/usr/local/Frameworks/R.framework/Resources/include -I~/.Rlibs/Rcpp/include'
- 
-" ------------------------------
-"                  
-" 8. Git Settings
-"                  
-" ------------------------------
+
+" }}}
+" 8. Git Settings {{{ 
 
 nnoremap <leader>gs :Gstatus<CR>
 
-" ------------------------------
-"                  
-" 9. Silver Searcher Settings
-"                  
-" ------------------------------
+" }}}
+" 9. Silver Searcher Settings {{{
 
 nnoremap <leader>a :Ag!<Space>
 let g:ag_working_path_mode="r"
+
+" }}}
 
 " vim:foldmethod=marker:foldlevel=0
