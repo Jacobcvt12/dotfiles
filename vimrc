@@ -34,6 +34,7 @@ set foldenable                     " enable folding
 set foldmethod=indent              " fold based on indent level
 set foldlevelstart=10              " open most folds by default
 set modelines=1                    " check for vim settings on last line
+set autochdir                      " change directory to that of current file
 
 " specify which files are unzipped
 let g:zipPlugin_ext = '*.zip,*.jar'
