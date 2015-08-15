@@ -194,11 +194,14 @@ set t_Co=256
 " }}}
 " 7. Syntastic Settings {{{
 
-" include directories for Rcpp compilation
+" C++ settings
 let g:syntastic_cpp_compiler = 'g++-5'
 let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
 let g:syntastic_c_check_header = 1
 let b:syntastic_c_cflags = '-I/usr/local/Frameworks/R.framework/Resources/include -I~/.Rlibs/Rcpp/include'
+
+let g:syntastic_enable_r_lintr_checker = 1
+let g:syntastic_r_checkers = 1
 
 " }}}
 " 8. Git Settings {{{ 
