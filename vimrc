@@ -149,11 +149,6 @@ Plugin 'rking/ag.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'maksimr/vim-jsbeautify'
 
-" YouCompleteMe " support for clang
-
-let g:ycm_global_ycm_extra_conf = '~/dotfiles/ycm_extra_conf.py'
-let g:ycm_path_to_python_interpreter = '/usr/local/bin/python'
-
 " }}}
 " 5. Vim-R Settings {{{
 
@@ -213,6 +208,13 @@ nnoremap <leader>gs :Gstatus<CR>
 
 nnoremap <leader>a :Ag!<Space>
 let g:ag_working_path_mode="r"
+
+" }}}
+" 10. YouCompleteMe Settings {{{
+
+let g:ycm_global_ycm_extra_conf = '~/dotfiles/ycm_extra_conf.py'
+let g:ycm_path_to_python_interpreter = '/usr/local/bin/python'
+let g:ycm_autoclose_preview_window_after_insertion = 1
 
 " }}}
 
