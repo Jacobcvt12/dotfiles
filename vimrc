@@ -39,6 +39,9 @@ set autochdir                      " change directory to that of current file
 " specify which files are unzipped
 let g:zipPlugin_ext = '*.zip,*.jar'
 
+" specify which files are ignored
+set wildignore+=*.o,*.pyc
+
 " convert docx files to markdown on read and vice versa
 " http://vi.stackexchange.com/questions/554/is-it-possible-to-easily-work-with-odt-doc-docx-rtf-and-other-non-plain
 autocmd BufReadPost *.docx :%!pandoc -f docx -t markdown
