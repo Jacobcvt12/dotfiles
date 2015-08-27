@@ -40,7 +40,7 @@ set autochdir                      " change directory to that of current file
 let g:zipPlugin_ext = '*.zip,*.jar'
 
 " specify which files are ignored
-set wildignore+=*.o,*.pyc
+set wildignore+=*.o,*.pyc,*.Rd
 
 " convert docx files to markdown on read and vice versa
 " http://vi.stackexchange.com/questions/554/is-it-possible-to-easily-work-with-odt-doc-docx-rtf-and-other-non-plain
