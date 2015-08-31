@@ -151,6 +151,7 @@ Plugin 'vim-scripts/Vim-R-Plugin'
 Plugin 'rking/ag.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'maksimr/vim-jsbeautify'
+Plugin 'tpope/vim-unimpaired'
 
 " }}}
 " 5. Vim-R Settings {{{
