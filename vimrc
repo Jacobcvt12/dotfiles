@@ -206,6 +206,10 @@ let g:syntastic_r_checkers = 1
 " 8. Git Settings {{{ 
 
 nnoremap <leader>gs :Gstatus<CR>
+nnoremap <leader>gl :Glog<CR>
+nnoremap <leader>gc :Git checkout<Space>
+nnoremap <leader>gps :Gpush<Space>
+nnoremap <leader>gpl :Gpull<Space>
 
 " }}}
 " 9. Silver Searcher Settings {{{
