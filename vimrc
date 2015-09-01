@@ -208,8 +208,8 @@ let g:syntastic_r_checkers = 1
 nnoremap <leader>gs :Gstatus<CR>
 nnoremap <leader>gl :Glog<CR>
 nnoremap <leader>gc :Git checkout<Space>
-nnoremap <leader>gps :Gpush<Space>
-nnoremap <leader>gpl :Gpull<Space>
+nnoremap <leader>gps :Gpush origin master
+nnoremap <leader>gpl :Gpull origin master
 
 " }}}
 " 9. Silver Searcher Settings {{{
