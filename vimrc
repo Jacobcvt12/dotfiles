@@ -152,6 +152,7 @@ Plugin 'rking/ag.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'maksimr/vim-jsbeautify'
 Plugin 'tpope/vim-unimpaired'
+Plugin 'reedes/vim-pencil'
 
 " }}}
 " 5. Vim-R Settings {{{
