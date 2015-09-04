@@ -153,6 +153,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'maksimr/vim-jsbeautify'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'reedes/vim-pencil'
+Plugin 'plasticboy/vim-markdown'
 
 " }}}
 " 5. Vim-R Settings {{{
