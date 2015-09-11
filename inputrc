@@ -1,0 +1,27 @@
+# -----------------------------------------------------------
+#
+# Description: .inputrc file (readline configurations)
+# Maintainer:	Jacob Carey <jacobcvt12@gmail.com>
+#
+# -----------------------------------------------------------
+
+# 1. General Settings {{{
+# complete to longest unambiguous pattern
+set show-all-if-ambiguous on
+
+# ignore case when tab completing
+set completion-ignore-case on
+
+# fill in _'s and -'s for me
+set completion-map-case on
+# }}}
+# 2. Key Bindings {{{
+# search more intuitively
+"\C-p": history-search-backward
+"\C-n": history-search-forward
+
+# zsh style tab complete
+"\t": menu-complete
+# }}}
+
+# vim:foldmethod=marker:foldlevel=0
