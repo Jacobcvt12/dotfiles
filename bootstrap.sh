@@ -7,6 +7,6 @@ fi
 
 # if OS X then install brew taps and packages
 if [ "$(uname)" == "Darwin" ]; then
-    cat ./homebrew/taps.txt | brew tap
-    cat ./homebrew/leaves.txt | brew install
+    cat ./homebrew/taps.txt | xargs brew tap
+    cat ./homebrew/leaves.txt | xargs brew install
 fi
