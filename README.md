@@ -1,5 +1,7 @@
 # Jacob's Dotfile Repo
 
+[![Build Status](https://travis-ci.org/Jacobcvt12/dotfiles.svg?branch=master)](https://travis-ci.org/Jacobcvt12/dotfiles)
+
 Here's where I version control my dotfiles. Feel free to copy/fork/borrow. Reading through these files will give you an idea as to my typical workflow. In some of the longer dotfiles I have use markings for vim folding. If you view these files with vim (compiled with `+folding`), the files are more easily browsed.
 
 ## Vim
