@@ -1,0 +1,11 @@
+language: 
+    bash
+
+sudo:
+    required
+
+os:
+    osx
+
+script:
+    bash bootstrap.sh
