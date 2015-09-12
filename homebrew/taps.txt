@@ -1,0 +1,7 @@
+caskroom/cask
+homebrew/apache
+homebrew/boneyard
+homebrew/dupes
+homebrew/fuse
+homebrew/science
+homebrew/versions
