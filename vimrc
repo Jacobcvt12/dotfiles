@@ -157,6 +157,8 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'maksimr/vim-jsbeautify'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'reedes/vim-pencil'
+Plugin 'vim-pandoc/vim-pandoc'
+Plugin 'vim-pandoc/vim-pandoc-syntax'
 
 " }}}
 " 5. Vim-R Settings {{{
