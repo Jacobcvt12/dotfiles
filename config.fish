@@ -1,6 +1,9 @@
 # Path to your oh-my-fish.
 set fish_path ~/dotfiles/.oh-my-fish
 
+# add latex to PATH
+set -x PATH $PATH /Library/TeX/Distributions/.DefaultTeX/Contents/Programs/texbin
+
 # Load oh-my-fish configuration.
 . $fish_path/oh-my-fish.fish
 
