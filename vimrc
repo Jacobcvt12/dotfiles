@@ -159,7 +159,6 @@ Plugin 'tpope/vim-unimpaired'
 Plugin 'reedes/vim-pencil'
 Plugin 'vim-pandoc/vim-pandoc'
 Plugin 'vim-pandoc/vim-pandoc-syntax'
-Plugin 'chrisbra/csv.vim'
 
 " }}}
 " 5. Vim-R Settings {{{
@@ -232,16 +231,6 @@ let g:ycm_global_ycm_extra_conf = '~/dotfiles/ycm_extra_conf.py'
 let g:ycm_path_to_python_interpreter = '/usr/local/bin/python'
 let g:ycm_autoclose_preview_window_after_insertion = 1
 
-" }}}
-" 11. CSV Settings {{{
-if exists("did_load_csvfiletype")
-  finish
-endif
-let did_load_csvfiletype=1
-
-augroup filetypedetect
-  au! BufRead,BufNewFile *.csv,*.dat	setfiletype csv
-augroup END
 " }}}
 
 " vim:foldmethod=marker:foldlevel=0
