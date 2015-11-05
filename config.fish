@@ -6,9 +6,3 @@ set -x PATH $PATH /Library/TeX/Distributions/.DefaultTeX/Contents/Programs/texbi
 
 # Load oh-my-fish configuration.
 source $OMF_PATH/init.fish
-
-# Theme
-Theme "robbyrussell"
-
-# Plugins
-Plugin "vundle"
