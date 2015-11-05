@@ -7,9 +7,6 @@ set -x PATH $PATH /Library/TeX/Distributions/.DefaultTeX/Contents/Programs/texbi
 # Load oh-my-fish configuration.
 source $OMF_PATH/init.fish
 
-# Load autojump
-. /usr/local/etc/autojump.fish
-
 # Theme
 Theme "robbyrussell"
 
