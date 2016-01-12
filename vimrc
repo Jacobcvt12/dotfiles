@@ -40,7 +40,7 @@ set autochdir                      " change directory to that of current file
 let g:zipPlugin_ext = '*.zip,*.jar'
 
 " specify which files are ignored
-set wildignore+=*.o,*.pyc,*.Rd,*/inst/doc/*
+set wildignore+=*.o,*.pyc,*.Rd,*/inst/doc/*,*.pdf
 
 " convert docx files to markdown on read and vice versa
 " http://vi.stackexchange.com/questions/554/is-it-possible-to-easily-work-with-odt-doc-docx-rtf-and-other-non-plain
@@ -159,6 +159,7 @@ Plugin 'tpope/vim-unimpaired'
 Plugin 'reedes/vim-pencil'
 Plugin 'vim-pandoc/vim-pandoc'
 Plugin 'vim-pandoc/vim-pandoc-syntax'
+Plugin 'lindemann09/jags.vim'
 
 " }}}
 " 5. Vim-R Settings {{{
@@ -206,8 +207,8 @@ let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
 let g:syntastic_c_check_header = 1
 let b:syntastic_c_cflags = '-I/usr/local/Frameworks/R.framework/Resources/include -I~/.Rlibs/Rcpp/include'
 
-let g:syntastic_enable_r_lintr_checker = 1
-let g:syntastic_r_checkers = 1
+let g:syntastic_enable_r_lintr_checker = 0
+let g:syntastic_r_checkers = 0
 
 " }}}
 " 8. Git Settings {{{ 
