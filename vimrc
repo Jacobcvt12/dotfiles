@@ -154,7 +154,6 @@ Plug 'tpope/vim-unimpaired'
 Plug 'reedes/vim-pencil'
 Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax'
-Plug 'lindemann09/jags.vim'
 
 call plug#end()
 
