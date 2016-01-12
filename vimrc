@@ -145,7 +145,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'Valloric/YouCompleteMe', { 'for': 'cpp', 'do': './install.py --clang-completer' }
 Plug 'scrooloose/syntastic'
 Plug 'bling/vim-airline'
-Plug 'klen/python-mode'
+Plug 'klen/python-mode', { 'for': 'python' }
 Plug 'tpope/vim-fugitive'
 Plug 'kien/ctrlp.vim'
 Plug 'vim-scripts/Vim-R-Plugin', {'for': ['r', 'rout', 'rrst', 'rmd'] }
