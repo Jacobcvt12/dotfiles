@@ -109,7 +109,7 @@ inoremap jk <esc>
 inoremap kj <esc>
 
 " enable tab navigation
-nnoremap <C-n>  :tabnew<CR>:e .<CR>
+nnoremap <C-n>  :tabnew<CR>:NERDTreeToggle<CR>
 nnoremap <C-j>  :tabnext<CR>
 nnoremap <C-k>  :tabprev<CR>
 
