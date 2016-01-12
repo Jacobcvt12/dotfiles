@@ -149,7 +149,7 @@ Plug 'bling/vim-airline'
 Plug 'klen/python-mode'
 Plug 'tpope/vim-fugitive'
 Plug 'kien/ctrlp.vim'
-Plug 'vim-scripts/Vim-R-Plugin'
+Plug 'vim-scripts/Vim-R-Plugin', {'for': ['r', 'rout', 'rrst', 'rmd'] }
 Plug 'rking/ag.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-unimpaired'
