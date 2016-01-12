@@ -138,7 +138,7 @@ call plug#begin('~/.vim/plugged')
 " My Plugins
 
 Plug 'gmarik/vundle'
-Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'scrooloose/nerdcommenter'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
 Plug 'scrooloose/syntastic'
