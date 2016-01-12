@@ -151,8 +151,6 @@ Plug 'rking/ag.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-unimpaired'
 Plug 'reedes/vim-pencil'
-Plug 'vim-pandoc/vim-pandoc'
-Plug 'vim-pandoc/vim-pandoc-syntax'
 
 call plug#end()
 
