@@ -140,7 +140,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'gmarik/vundle'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'scrooloose/nerdcommenter'
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
+Plug 'Valloric/YouCompleteMe', { 'for': 'cpp', 'do': './install.py --clang-completer' }
 Plug 'scrooloose/syntastic'
 Plug 'bling/vim-airline'
 Plug 'klen/python-mode'
