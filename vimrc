@@ -131,35 +131,32 @@ nnoremap q <C-v>
 map Q gq
 
 " }}}
-" 4. Vundle & Plugins {{{
+" 4. vim-plug {{{
 
-" system setup
-
-filetype off 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-filetype plugin indent on
+call plug#begin('~/.vim/plugged')
 
 " My Plugins
 
-Plugin 'gmarik/vundle'
-Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'scrooloose/syntastic'
-Plugin 'bling/vim-airline'
-Plugin 'klen/python-mode'
-Plugin 'tpope/vim-fugitive'
-Plugin 'kien/ctrlp.vim'
-Plugin 'vim-scripts/Vim-R-Plugin'
-Plugin 'rking/ag.vim'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'maksimr/vim-jsbeautify'
-Plugin 'tpope/vim-unimpaired'
-Plugin 'reedes/vim-pencil'
-Plugin 'vim-pandoc/vim-pandoc'
-Plugin 'vim-pandoc/vim-pandoc-syntax'
-Plugin 'lindemann09/jags.vim'
+Plug 'gmarik/vundle'
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdcommenter'
+Plug 'Valloric/YouCompleteMe'
+Plug 'scrooloose/syntastic'
+Plug 'bling/vim-airline'
+Plug 'klen/python-mode'
+Plug 'tpope/vim-fugitive'
+Plug 'kien/ctrlp.vim'
+Plug 'vim-scripts/Vim-R-Plugin'
+Plug 'rking/ag.vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'maksimr/vim-jsbeautify'
+Plug 'tpope/vim-unimpaired'
+Plug 'reedes/vim-pencil'
+Plug 'vim-pandoc/vim-pandoc'
+Plug 'vim-pandoc/vim-pandoc-syntax'
+Plug 'lindemann09/jags.vim'
+
+call plug#end()
 
 " }}}
 " 5. Vim-R Settings {{{
