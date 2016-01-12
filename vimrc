@@ -47,6 +47,9 @@ set wildignore+=*.o,*.pyc,*.Rd,*/inst/doc/*,*.pdf
 autocmd BufReadPost *.docx :%!pandoc -f docx -t markdown
 autocmd BufWritePost *.docx :!pandoc -f markdown -t docx % > tmp.docx
 
+" close NERDTree on file open
+let NERDTreeQuitOnOpen = 1
+
 " }}}
 " 2. General Settings (Conditional) {{{
 
