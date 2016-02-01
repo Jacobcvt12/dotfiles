@@ -153,6 +153,7 @@ Plug 'rking/ag.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-unimpaired'
 Plug 'reedes/vim-pencil'
+Plug 'reedes/vim-wordy'
 
 call plug#end()
 
