@@ -154,6 +154,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-unimpaired'
 Plug 'reedes/vim-pencil'
 Plug 'reedes/vim-wordy'
+Plug 'sk1418/HowMuch'
 
 call plug#end()
 
