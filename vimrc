@@ -144,7 +144,6 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'scrooloose/nerdcommenter'
 Plug 'Valloric/YouCompleteMe', { 'for': 'cpp', 'do': './install.py --clang-completer' }
 Plug 'scrooloose/syntastic'
-Plug 'bling/vim-airline'
 Plug 'klen/python-mode', { 'for': 'python' }
 Plug 'tpope/vim-fugitive'
 Plug 'kien/ctrlp.vim'
@@ -155,6 +154,8 @@ Plug 'tpope/vim-unimpaired'
 Plug 'reedes/vim-pencil'
 Plug 'reedes/vim-wordy'
 Plug 'sk1418/HowMuch'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
 
