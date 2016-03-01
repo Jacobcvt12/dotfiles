@@ -157,6 +157,9 @@ Plug 'sk1418/HowMuch'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+" color schemes
+Plug 'AlessandroYorba/Alduin'
+
 call plug#end()
 
 " }}}
