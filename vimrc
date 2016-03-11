@@ -159,6 +159,7 @@ Plug 'vim-airline/vim-airline-themes'
 
 " color schemes
 Plug 'AlessandroYorba/Alduin'
+Plug 'sickill/vim-monokai'
 
 call plug#end()
 
