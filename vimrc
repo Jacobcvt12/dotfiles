@@ -142,7 +142,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'scrooloose/nerdcommenter'
-Plug 'Valloric/YouCompleteMe', { 'for': 'cpp', 'do': './install.py --clang-completer' }
+Plug 'Valloric/YouCompleteMe', { 'for': ['cpp', 'rust'], 'do': './install.py --clang-completer --racer-completer' }
 Plug 'scrooloose/syntastic'
 Plug 'klen/python-mode', { 'for': 'python' }
 Plug 'tpope/vim-fugitive'
