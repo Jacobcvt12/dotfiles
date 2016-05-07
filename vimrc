@@ -147,7 +147,8 @@ Plug 'scrooloose/syntastic'
 Plug 'klen/python-mode', { 'for': 'python' }
 Plug 'tpope/vim-fugitive'
 Plug 'kien/ctrlp.vim'
-Plug 'vim-scripts/Vim-R-Plugin', {'for': ['r', 'rout', 'rrst', 'rmd'] }
+" Plug 'vim-scripts/Vim-R-Plugin', {'for': ['r', 'rout', 'rrst', 'rmd'] }
+Plug 'jalvesaq/Nvim-R', { 'commit': '4f8f996', 'for': ['r', 'rout', 'rrst', 'rmd'] }
 Plug 'rking/ag.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-unimpaired'
@@ -167,17 +168,11 @@ call plug#end()
 " }}}
 " 5. Vim-R Settings {{{
 
-" Open R session in Terminal
-
-let vimrplugin_applescript = 0
-let vimrplugin_screenplugin = 0
+" open with tmux and split vertically
+let g:R_tmux_split = 1
+let g:R_vsplit = 1
 
 " R keyboard mappings
-
-"start R with F2 key
-map <F2> <Plug>RStart 
-imap <F2> <Plug>RStart
-vmap <F2> <Plug>RStart
 
 " send selection to R with space bar
 vmap <Space> <Plug>RDSendSelection 
