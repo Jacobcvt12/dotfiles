@@ -59,11 +59,7 @@ if $SHELL =~ '/fish'
     set shell=/usr/local/bin/bash
 endif
 
-if has("vms")
-  set nobackup		" do not keep a backup file, use versions instead
-else
-  set backup		" keep a backup file
-endif
+set nobackup		" do not keep a backup file, use versions instead
 
 " Switch syntax highlighting on
 syntax on
