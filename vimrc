@@ -5,7 +5,7 @@
 "
 " -----------------------------------------------------------
 
-" 1. General Settings {{{
+" 1.  General Settings {{{
 
 " Use Vim settings, rather than Vi settings 
 " This must be first, because it changes other options as a side effect.
@@ -51,7 +51,7 @@ autocmd BufWritePost *.docx :!pandoc -f markdown -t docx % > tmp.docx
 let NERDTreeQuitOnOpen = 1
 
 " }}}
-" 2. General Settings (Conditional) {{{
+" 2.  General Settings (Conditional) {{{
 
 " Vim requires a POSIX-compliant shell. Set shell to be bash
 " if SHELL environment variable contains /fish
@@ -92,7 +92,7 @@ autocmd BufReadPost *
 augroup END
 
 " }}}
-" 3. General Keyboard Mappings {{{
+" 3.  General Keyboard Mappings {{{
 
 " remap escape key
 " to simultaneous jk
@@ -118,7 +118,7 @@ nmap <silent> <leader>sv :so $MYVIMRC<CR>
 map Q gq
 
 " }}}
-" 4. vim-plug {{{
+" 4.  vim-plug {{{
 
 call plug#begin('~/.vim/plugged')
 
@@ -149,7 +149,7 @@ Plug 'sickill/vim-monokai'
 call plug#end()
 
 " }}}
-" 5. Vim-R Settings {{{
+" 5.  Vim-R Settings {{{
 
 " Open R session in Terminal
 
@@ -170,7 +170,7 @@ vmap <Space> <Plug>RDSendSelection
 nmap <Space> <Plug>RDSendLine
 
 " }}}
-" 6. Vim-airline Settings {{{
+" 6.  Vim-airline Settings {{{
 
 let g:airline_theme                         = 'bubblegum'
 let g:airline#extensions#syntastic#enabled  = 1
@@ -186,7 +186,7 @@ let g:airline_right_sep = '◀'
 set t_Co=256
 
 " }}}
-" 7. Syntastic Settings {{{
+" 7.  Syntastic Settings {{{
 
 " C++ settings
 let g:syntastic_cpp_compiler = 'g++-5'
@@ -198,7 +198,7 @@ let g:syntastic_enable_r_lintr_checker = 0
 let g:syntastic_r_checkers = 0
 
 " }}}
-" 8. Git Settings {{{ 
+" 8.  Git Settings {{{ 
 
 nnoremap <leader>gs :Gstatus<CR>
 nnoremap <leader>gl :Glog<CR>
@@ -207,7 +207,7 @@ nnoremap <leader>gps :Gpush origin master
 nnoremap <leader>gpl :Gpull origin master
 
 " }}}
-" 9. Silver Searcher Settings {{{
+" 9.  Silver Searcher Settings {{{
 
 nnoremap <leader>a :Ag!<Space>
 let g:ag_working_path_mode="r"
