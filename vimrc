@@ -114,10 +114,6 @@ let mapleader = ","
 nmap <silent> <leader>ev :tabnew<CR>:e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
-" change ctrl v to ctrl q so as not to conflict with tmux binding
-" THIS DISABLES MACRO RECORDING
-nnoremap q <C-v>
-
 " Don't use Ex mode, use Q for formatting
 map Q gq
 
