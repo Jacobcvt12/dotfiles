@@ -145,6 +145,7 @@ Plug 'sk1418/HowMuch'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'rust-lang/rust.vim'
+Plug 'mhinz/vim-startify'
 
 " color schemes
 Plug 'AlessandroYorba/Alduin'
