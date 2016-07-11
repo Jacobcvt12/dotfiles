@@ -14,6 +14,10 @@ set nocompatible
 " make backspace work like most other apps
 set backspace=indent,eol,start
 
+" change tab complete for vim
+set wildmenu
+set wildchar=<TAB>
+
 " enable hybrid rnu
 set relativenumber
 set number
