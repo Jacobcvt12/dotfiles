@@ -109,17 +109,17 @@ nnoremap <C-j>  :tabnext<CR>
 nnoremap <C-k>  :tabprev<CR>
 
 " press control c to copy to mac clipboard
-vmap <C-c> :w !pbcopy<CR><CR> 
+vnoremap <C-c> :w !pbcopy<CR><CR> 
 
 " use comma as leader
 let mapleader = ","
 
 " Quickly edit/reload the vimrc file
-nmap <silent> <leader>ev :tabnew<CR>:e $MYVIMRC<CR>
-nmap <silent> <leader>sv :so $MYVIMRC<CR>
+nnoremap <silent> <leader>ev :tabnew<CR>:e $MYVIMRC<CR>
+nnoremap <silent> <leader>sv :so $MYVIMRC<CR>
 
 " Don't use Ex mode, use Q for formatting
-map Q gq
+nnoremap Q gq
 
 " }}}
 " 4.  vim-plug {{{
