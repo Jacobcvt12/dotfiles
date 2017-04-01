@@ -148,6 +148,7 @@ Plug 'rust-lang/rust.vim'
 Plug 'mhinz/vim-startify'
 Plug 'rhysd/vim-grammarous'
 Plug 'JuliaEditorSupport/julia-vim'
+Plug 'jpalardy/vim-slime'
 
 " color schemes
 Plug 'AlessandroYorba/Alduin'
@@ -225,6 +226,11 @@ let g:ag_working_path_mode="r"
 let g:ycm_global_ycm_extra_conf = '~/dotfiles/ycm_extra_conf.py'
 let g:ycm_path_to_python_interpreter = '/usr/local/bin/python'
 let g:ycm_autoclose_preview_window_after_insertion = 1
+
+" }}}
+" 11. vim-slime settings {{{
+
+let g:slime_target = "tmux"
 
 " }}}
 
